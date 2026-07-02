@@ -1,0 +1,666 @@
+/* ===============================
+   CHARAKA AYURVEDIC CLINIC
+   STYLE.CSS
+=============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7fcf5;
+    color:#333;
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*=========================
+HEADER
+==========================*/
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    font-size:35px;
+    color:#2E7D32;
+}
+
+.logo h2{
+    color:#2E7D32;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    gap:28px;
+}
+
+nav a{
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2E7D32;
+}
+
+.call-btn{
+    background:#2E7D32;
+    color:white;
+    padding:12px 25px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.call-btn:hover{
+    background:#1B5E20;
+}
+
+/*=========================
+HERO
+==========================*/
+
+.hero{
+    padding-top:140px;
+    padding-bottom:80px;
+    background:linear-gradient(to right,#f5fff4,#e8f5e9);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text h4{
+    color:#2E7D32;
+    font-size:20px;
+}
+
+.hero-text h1{
+    font-size:56px;
+    color:#1b5e20;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    font-size:32px;
+    color:#4caf50;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.experience{
+    display:inline-block;
+    background:#2E7D32;
+    color:white;
+    padding:10px 25px;
+    border-radius:30px;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    background:#2E7D32;
+    color:white;
+    padding:14px 30px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1b5e20;
+}
+
+.btn2{
+    background:#25D366;
+    color:white;
+    padding:14px 30px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn2:hover{
+    background:#128c7e;
+}
+
+/*=========================
+DOCTOR IMAGE
+==========================*/
+
+.hero-image img{
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    border:6px solid white;
+}
+
+/*=========================
+SECTION TITLE
+==========================*/
+
+.title{
+    text-align:center;
+    font-size:42px;
+    color:#2E7D32;
+    margin-bottom:50px;
+}
+
+section{
+    padding:90px 0;
+}
+
+/*=========================
+ABOUT
+==========================*/
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-grid img{
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.about-grid h3{
+    color:#2E7D32;
+    font-size:34px;
+}
+
+.about-grid h4{
+    color:#777;
+    margin-bottom:20px;
+}
+
+.about-grid p{
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.info-box{
+    background:#f2fff2;
+    padding:25px;
+    border-left:5px solid #2E7D32;
+    border-radius:12px;
+}
+
+.info-box p{
+    margin-bottom:12px;
+}
+
+/*=========================
+TREATMENTS
+==========================*/
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#2E7D32;
+}
+
+/*=========================
+DOCTOR SECTION
+==========================*/
+
+.doctor-box{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.doctor-box img{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.doctor-box h2{
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+.doctor-box h3{
+    margin-bottom:20px;
+}
+
+
+/*==================================
+WHY CHOOSE US
+==================================*/
+
+.why-us{
+    background:#f7fcf5;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-card i{
+    font-size:55px;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+/*==================================
+CLINIC TIMINGS
+==================================*/
+
+.timings{
+    background:#2E7D32;
+    color:#fff;
+}
+
+.timings .title{
+    color:#fff;
+}
+
+.timing-box{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.timing-box div{
+    background:rgba(255,255,255,.15);
+    padding:35px;
+    border-radius:15px;
+    min-width:280px;
+    text-align:center;
+}
+
+.timing-box h3{
+    margin-bottom:15px;
+}
+
+.timing-box p{
+    font-size:22px;
+    font-weight:600;
+}
+
+/*==================================
+TESTIMONIALS
+==================================*/
+
+.testimonials{
+    background:#f5fff5;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.testimonial{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.testimonial:hover{
+    transform:translateY(-8px);
+}
+
+.testimonial p{
+    margin:20px 0;
+    color:#555;
+}
+
+.testimonial h4{
+    color:#2E7D32;
+}
+
+/*==================================
+CONTACT
+==================================*/
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.contact-grid h3{
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.contact-grid p{
+    margin-bottom:18px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-family:Poppins;
+    font-size:16px;
+}
+
+form textarea{
+    height:150px;
+    resize:none;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/*==================================
+GOOGLE MAP
+==================================*/
+
+.map iframe{
+    width:100%;
+    border:none;
+}
+
+/*==================================
+FOOTER
+==================================*/
+
+footer{
+    background:#1b5e20;
+    color:#fff;
+    text-align:center;
+    padding:45px 20px;
+}
+
+footer h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/*==================================
+FLOATING WHATSAPP
+==================================*/
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:34px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/*==================================
+FLOATING CALL
+==================================*/
+
+.call{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#2E7D32;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+.call:hover{
+    transform:scale(1.1);
+}
+
+/*==================================
+ANIMATIONS
+==================================*/
+
+.card,
+.why-card,
+.testimonial,
+.doctor-box,
+.about-grid img,
+.about-grid div{
+    transition:.5s;
+}
+
+.card:hover,
+.why-card:hover,
+.testimonial:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/*==================================
+SCROLLBAR
+==================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2E7D32;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.hero-grid,
+.about-grid,
+.contact-grid,
+.doctor-box{
+    grid-template-columns:1fr;
+}
+
+header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-image img{
+    max-width:400px;
+    margin:auto;
+}
+
+}
+
+@media(max-width:768px){
+
+.logo h2{
+    font-size:22px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.title{
+    font-size:32px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn,
+.btn2{
+    text-align:center;
+}
+
+.timing-box{
+    flex-direction:column;
+    gap:25px;
+}
+
+.contact-grid{
+    gap:30px;
+}
+
+.whatsapp,
+.call{
+    width:55px;
+    height:55px;
+    font-size:28px;
+}
+
+}
